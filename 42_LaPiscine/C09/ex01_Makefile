@@ -1,0 +1,43 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: seojulee <seojulee@student.42seoul.kr>     +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/09/11 22:47:19 by seojulee          #+#    #+#              #
+#    Updated: 2022/09/12 20:53:49 by seojulee         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+DIRSRC	= srcs/
+DIRHDR	= includes
+
+NAME	= libft.a
+SRCS	= ${DIRSRC}ft_putchar.c ${DIRSRC}ft_swap.c ${DIRSRC}ft_putstr.c \
+		  ${DIRSRC}ft_strlen.c ${DIRSRC}ft_strcmp.c
+OBJS	= ${DIRSRC}ft_putchar.o ${DIRSRC}ft_swap.o ${DIRSRC}ft_putstr.o \
+		  ${DIRSRC}ft_strlen.o ${DIRSRC}ft_strcmp.o
+
+CC		= gcc
+CFLAGS	= -c -Wall -Wextra -Werror
+AR		= ar -rcs
+RM		= rm -f
+
+all	: 		${NAME}
+	
+$(NAME) : 	${OBJS}
+			${AR} ${NAME} ${OBJS}
+
+.c.o :
+			${CC} ${CFLAGS} $< -o $@ -I ${DIRHDR}
+
+clean : 
+			${RM} ${OBJS}
+
+fclean : 	clean
+			${RM} ${NAME}
+
+re : 		fclean all
+
+.PHONY : all clean fclean re

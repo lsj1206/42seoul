@@ -1,0 +1,31 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: seojulee <seojulee@student.42seoul.kr>     +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/09/14 15:15:29 by seojulee          #+#    #+#              #
+#    Updated: 2022/09/14 17:51:16 by seojulee         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME	= do-op
+CC		= gcc
+CFLAGS	= -Wall -Wextra -Werror
+RM		= rm -f
+
+all	: 		${NAME}
+
+.PHONY : $(NAME) all clean fclean re
+
+$(NAME) : 	
+			${CC} ${CFLAGS} *.c -o ${NAME} -I *.h
+
+clean :
+			${RM} *.o
+
+fclean :	clean
+			${RM} ${NAME}
+
+re :		fclean all

@@ -1,0 +1,5 @@
+Credentials cache: API:B19F11CC-79A2-4DE7-AE28-D609B200EC75
+        Principal: seojulee@42SEOUL.KR
+
+  Issued                Expires               Principal
+Aug 22 14:40:32 2022  Aug 23 00:40:26 2022  krbtgt/42SEOUL.KR@42SEOUL.KR
