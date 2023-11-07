@@ -1,0 +1,16 @@
+NO ./textures/Wall_x512_vertical.xpm
+SO ./textures/Wall_x512_vertical.xpm
+WE ./textures/Wall_x512_vertical_side.xpm
+EA ./textures/Wall_x512_vertical_side.xpm
+F 10,115,150
+C 200,255,255
+
+111111111
+100000001
+100000001
+110000001
+1100W0011
+110000001
+100000001
+100101001
+111111111
