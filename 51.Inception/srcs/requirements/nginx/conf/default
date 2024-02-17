@@ -1,0 +1,32 @@
+server {
+	# 443포트에서 SSL연결을 수신
+	listen 443 ssl;
+	listen [::]:443 ssl;
+
+	# SSL 프로토콜 버전 설정
+	ssl_protocols  TLSv1.2 TLSv1.3;
+
+	# SSL 인증서 경로 설정
+	ssl_certificate /etc/ssl/seojulee.crt;
+	ssl_certificate_key /etc/ssl/seojulee.key;
+
+	# 웹 서버의 루트 디렉토리 설정
+	root /var/www;
+
+	# 인덱스 파일 우선 순위 설정
+	index index.php index.html;
+
+	# 서버 이름 설정
+	server_name seojulee.42.fr;
+
+	# 파일이나 디렉토리가 존재하지 않을 경우 404 에러 반환
+	location / {
+		try_files $uri $uri/ =404;
+	}
+
+	# PHP 파일 요청에 대한 처리 설정
+	location ~ \.php$ {
+		include snippets/fastcgi-php.conf;
+		fastcgi_pass wordpress:9000;
+	}
+}

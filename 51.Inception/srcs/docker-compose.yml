@@ -1,0 +1,60 @@
+version: '3'
+
+services:
+  mariadb:
+    container_name: mariadb
+    build: ./requirements/mariadb
+    env_file: .env
+    volumes:
+      - db_vol:/var/run/mysqld
+    networks:
+      - intra
+    restart: always
+
+  wordpress:
+    container_name: wordpress
+    build: ./requirements/wordpress
+    env_file: .env
+    volumes:
+        - web_vol:/var/www
+    networks:
+        - intra
+    depends_on:
+        - mariadb
+    restart: always
+
+  nginx:
+    container_name: nginx
+    build: ./requirements/nginx
+    env_file: .env
+    volumes:
+        - web_vol:/var/www
+    networks:
+        - intra
+    ports:
+        - "443:443"
+    depends_on:
+        - wordpress
+    restart: always
+
+volumes:
+  db_vol:
+    name: db_vol
+    driver: local
+    driver_opts:
+      device: '/home/seojulee/data/db'
+      type: 'none'
+      o: 'bind'
+
+  web_vol:
+    name: web_vol
+    driver: local
+    driver_opts:
+      device: '/home/seojulee/data/wordpress/'
+      type: 'none'
+      o: 'bind'
+
+networks:
+  intra:
+    name : intra
+    driver: bridge
