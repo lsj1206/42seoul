@@ -9,25 +9,25 @@
     </summary>
     <p>
 
-  - LaPiscine
-  - ---
-  - libft
-  - get_next_line
-  - born2beroot
-  - ft_printf
-  - ---
-  - push_swap
-  - so_long
-  - minitalk
-  - ---
-  - minishell
-  - Philosopher
-  - ---
-  - Cub3D
-  - NetPractice
-  - CPP Module 00-04
-  - ---
-  - Inception
+  LaPiscine
+  --
+  libft
+  get_next_line
+  born2beroot
+  ft_printf
+  --
+  push_swap
+  so_long
+  minitalk
+  --
+  minishell
+  Philosopher
+  --
+  Cub3D
+  NetPractice
+  CPP Module 00-04
+  --
+  Inception
 
 
     </p>
