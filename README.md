@@ -2,16 +2,11 @@
 
   # 42Seoul Complete Subject
   [**Notion →**][Notion]
-
-</div>
-
-## Subject list
-
-<details>
-  <summary> <i>Lists</i></summary>
-  <p>
-
-    LaPiscine
+  <summary>
+    <i>
+      Subject list
+    </i>
+	LaPiscine
 	---
     libft
     get_next_line
@@ -30,8 +25,8 @@
     CPP Module 00-04
 	---
     Inception
-	
-  </p>
-</details>
+   </summary>
+
+</div>
 
 [Notion]: https://sapphire-sardine-55a.notion.site/42Seoul-e97fc1974224406788ad77ca63ccfe5f?pvs=4
