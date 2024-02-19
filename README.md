@@ -1,7 +1,5 @@
 # 42Seoul Complete Subject
 
-[**Notion**][Notion]
-
 <details>
 <summary> Subject list </summary>
 <p>
@@ -21,5 +19,7 @@
 	<br>- Inception
 </p>
 </details>
+
+[**Notion**][Notion]
 
 [Notion]: https://sapphire-sardine-55a.notion.site/42Seoul-e97fc1974224406788ad77ca63ccfe5f?pvs=4
