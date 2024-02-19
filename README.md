@@ -1,35 +1,26 @@
 <div align="center">
-
   # 42Seoul Complete Subject
+
   [**Notion →**][Notion]
-
   <details>
-    <summary>
-      <i> Subject list </i>
+    <summary style="text-align: center;">
+      Subject list
     </summary>
-    <p>
-
-  LaPiscine
-  --
-  libft
-  get_next_line
-  born2beroot
-  ft_printf
-  --
-  push_swap
-  so_long
-  minitalk
-  --
-  minishell
-  Philosopher
-  --
-  Cub3D
-  NetPractice
-  CPP Module 00-04
-  --
-  Inception
-
-
+    <p align="center">
+      LaPiscine,
+      libft,
+      get_next_line,
+      born2beroot,
+      ft_printf,
+      push_swap,
+      so_long,
+      minitalk,
+      minishell,
+      Philosopher,
+      Cub3D,
+      NetPractice,
+      CPP Module 00-04,
+      Inception
     </p>
   </details>
 </div>
