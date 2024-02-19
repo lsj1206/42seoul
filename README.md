@@ -2,10 +2,11 @@
 
   # 42Seoul Complete Subject
   [**Notion →**][Notion]
-  <summary>
-    <i>
-      Subject list
-    </i>
+
+  <details>
+    <summary>
+      <i> Subject list </i>
+    </summary>
     <p>
     - LaPiscine
     - ---
@@ -27,8 +28,7 @@
     - ---
     - Inception
     </p>
-   </summary>
-
+  </details>
 </div>
 
 [Notion]: https://sapphire-sardine-55a.notion.site/42Seoul-e97fc1974224406788ad77ca63ccfe5f?pvs=4
