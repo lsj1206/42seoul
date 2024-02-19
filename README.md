@@ -8,20 +8,20 @@
       Subject list
     </summary>
     <p align="center">
-      LaPiscine <hr>
-      <br>libft
-      <br>get_next_line
-      <br>born2beroot
-      <br>ft_printf <hr>
-      <br>push_swap
-      <br>so_long
-      <br>minitalk <hr>
-      <br>minishell
-      <br>Philosopher <hr>
-      <br>Cub3D
-      <br>NetPractice
-      <br>CPP Module 00-04
-      <br>Inception
+      - LaPiscine
+      <br>- libft
+      <br>- get_next_line
+      <br>- born2beroot
+      <br>- ft_printf
+      <br>- push_swap
+      <br>- so_long
+      <br>- minitalk
+      <br>- minishell
+      <br>- Philosopher
+      <br>- Cub3D
+      <br>- NetPractice
+      <br>- CPP Module 00-04
+      <br>- Inception
     </p>
   </details>
 </div>
